@@ -4,6 +4,8 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Transformation from "./components/Transformation";
 import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Services />
       <Transformation />
       <Gallery />
+      <Contact />
+      <Footer />
     </>
   );
 }
