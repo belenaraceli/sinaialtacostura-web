@@ -1,5 +1,6 @@
-import "../styles/navbar.scss";
+import "../styles/global.css";
 import { useState } from "react";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,25 +9,40 @@ const Navbar = () => {
     <nav className="navbar">
       {/* LOGO */}
       <div className="logo">
-        <img src="/images/logo.png" alt="Sinai logo" />
+        <a href="#inicio">
+          <img src={logo} alt="Sinai logo" />
+        </a>
       </div>
 
       {/* MENU */}
       <ul className={`menu ${menuOpen ? "active" : ""}`}>
-        <li>Inicio</li>
-        <li>Sobre mí</li>
-        <li>Servicios</li>
-        <li>Transformación</li>
-        <li>Galería</li>
-        <li>Turnos</li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#transformacion">Transformación</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto" className="turnos">Turnos</a></li>
       </ul>
 
       {/* RIGHT SIDE */}
       <div className="right">
         <div className="social">
-          <span>IG</span>
-          <span>FB</span>
-        </div>
+      <a
+        href="https://instagram.com/sinaialtacostura"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="../src/assets/images/ig.svg" alt="Instagram" />
+      </a>
+
+      <a
+        href="https://facebook.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="../src/assets/images/fb.svg" alt="Facebook" />
+      </a>
+      </div>
 
         {/* HAMBURGER */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

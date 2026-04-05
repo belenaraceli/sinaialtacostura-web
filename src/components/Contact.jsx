@@ -1,8 +1,8 @@
-import "../styles/contact.scss";
+import "../styles/global.css";
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contacto">
       <div className="contact-box">
         <h2 className="contact-title">¡Agenda tu cita!</h2>
 

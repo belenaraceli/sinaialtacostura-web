@@ -1,8 +1,8 @@
-import "../styles/about.scss";
+import "../styles/global.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="sobre-mi">
       <div className="about__container">
 
         <div className="about__text">

@@ -1,8 +1,8 @@
-import "../styles/services.scss";
+import "../styles/global.css";
 
 const Services = () => {
   return (
-    <section className="services">
+    <section className="services" id="servicios">
 
       <h2 className="services__title">Servicios</h2>
 

@@ -1,8 +1,8 @@
-import "../styles/gallery.scss";
+import "../styles/global.css";
 
 const Gallery = () => {
   return (
-    <section className="gallery">
+    <section className="gallery" id="galeria">
 
       <h2 className="gallery__title">Galería</h2>
 

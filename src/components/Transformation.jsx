@@ -1,8 +1,8 @@
-import "../styles/transformation.scss";
+import "../styles/global.css";
 
 const Transformation = () => {
   return (
-    <section className="transformation">
+    <section className="transformation" id="transformacion">
 
       <div className="transformation__container">
 
