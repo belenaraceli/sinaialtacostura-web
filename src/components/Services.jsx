@@ -11,7 +11,7 @@ const Services = () => {
         {/* CARD */}
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/novia.jpg" alt="Novias" />
+            <img src="/src/assets/images/novias.svg" alt="Novias" />
             <span>Novias</span>
           </div>
           <p>
@@ -22,7 +22,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/15.jpg" alt="15 años" />
+            <img src="/src/assets/images/15.svg" alt="15 años" />
             <span>15 Años</span>
           </div>
           <p>
@@ -33,7 +33,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/madrinas.jpg" alt="Madrinas" />
+            <img src="/src/assets/images/madrinas.svg" alt="Madrinas" />
             <span>Madrinas</span>
           </div>
           <p>
