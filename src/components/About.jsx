@@ -3,12 +3,13 @@ import "../styles/global.css";
 const About = () => {
   return (
     <section className="about" id="sobre-mi">
-      <div className="about__container">
+      <div className="about-container">
 
-        <div className="about__text">
-          <p className="about__subtitle">Creando la prenda de tus sueños</p>
-
-          <h2 className="about__title">Sobre Mi</h2>
+        {/* TEXTO */}
+        <div className="about-text">
+          <p className="about-subtitle">
+            Creando la prenda de tus sueños
+          </p>
 
           <p>
             Bienvenidas a Sinai Alta Costura. Soy Leo, diseñadora apasionada por crear vestidos únicos y personalizados para momentos especiales.
@@ -27,9 +28,13 @@ const About = () => {
           </p>
         </div>
 
-        <div className="about__image">
-          <img src="/images/about.jpg" alt="Diseñadora trabajando" />
+        {/* IMAGEN */}
+        <div className="about-image">
+          <img src="/src/assets/images/about.svg" alt="Diseño de vestidos" />
         </div>
+
+        {/* TITULO FLOTANTE */}
+        <h2 className="about-title">Sobre Mí</h2>
 
       </div>
     </section>
@@ -37,3 +42,4 @@ const About = () => {
 };
 
 export default About;
+

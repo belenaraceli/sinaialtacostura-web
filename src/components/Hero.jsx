@@ -3,12 +3,22 @@ import "../styles/global.css";
 const Hero = () => {
   return (
     <section className="hero" id="inicio">
-      <div className="overlay">
-        <h2 className="brand">SINAI</h2>
+      <div className="hero-overlay">
+    
+        <div className="hero-top">
+          <img 
+              src="../src/assets/images/sinai-title.png" 
+              alt="Sinai" 
+              className="hero-logo"
+          />
 
-        <button className="cta">Reservar cita</button>
+          <a href="#contacto" className="hero-btn">
+            Reservar mi cita
+          </a>
+        </div>
 
-        <h1 className="title">Alta Costura</h1>
+        <h2 className="hero-title">Alta Costura</h2>
+
       </div>
     </section>
   );

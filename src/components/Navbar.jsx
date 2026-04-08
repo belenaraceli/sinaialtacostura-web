@@ -1,6 +1,6 @@
 import "../styles/global.css";
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "/images/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="../src/assets/images/ig.svg" alt="Instagram" />
+        <img src="/images/ig.svg" alt="Instagram" />
       </a>
 
       <a
@@ -40,7 +40,7 @@ const Navbar = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="../src/assets/images/fb.svg" alt="Facebook" />
+        <img src="/images/fb.svg" alt="Facebook" />
       </a>
       </div>
 

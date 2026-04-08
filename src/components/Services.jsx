@@ -3,31 +3,57 @@ import "../styles/global.css";
 const Services = () => {
   return (
     <section className="services" id="servicios">
+      
+      <h2 className="services-title">Mis Servicios</h2>
 
-      <h2 className="services__title">Servicios</h2>
+      <div className="services-grid">
 
-      <div className="services__grid">
-
-        <div className="service">
-          <img src="/images/novia.jpg" alt="Novias" />
-          <h3>Novias</h3>
-          <p>Diseños únicos para uno de los días más importantes de tu vida.</p>
+        {/* CARD */}
+        <div className="service-card">
+          <div className="service-img">
+            <img src="/src/assets/images/novia.jpg" alt="Novias" />
+            <span>Novias</span>
+          </div>
+          <p>
+            Vestidos de novia diseñados para reflejar tu esencia.
+            Románticos, modernos o clásicos, creamos el vestido perfecto para tu "sí, quiero".
+          </p>
         </div>
 
-        <div className="service">
-          <img src="/images/madrinas.jpg" alt="Madrinas" />
-          <h3>Madrinas</h3>
-          <p>Elegancia y estilo para acompañar momentos especiales.</p>
+        <div className="service-card">
+          <div className="service-img">
+            <img src="/src/assets/images/15.jpg" alt="15 años" />
+            <span>15 Años</span>
+          </div>
+          <p>
+            Diseños de ensueño para una noche mágica. Colores vibrantes,
+            faldas voluminosas o estilos sutiles, adaptados a tu personalidad.
+          </p>
         </div>
 
-        <div className="service">
-          <img src="/images/quince.jpg" alt="Quinceañeras" />
-          <h3>Quinceañeras</h3>
-          <p>Vestidos soñados para una noche inolvidable.</p>
+        <div className="service-card">
+          <div className="service-img">
+            <img src="/src/assets/images/madrinas.jpg" alt="Madrinas" />
+            <span>Madrinas</span>
+          </div>
+          <p>
+            Alta costura para invitadas, madrinas y eventos de gala.
+            Destaca con un vestido hecho a medida que realce tu figura.
+          </p>
+        </div>
+
+        <div className="service-card">
+          <div className="service-img">
+            <img src="/src/assets/images/transformacion.jpg" alt="Transformación" />
+            <span>Rediseño & Transformación</span>
+          </div>
+          <p>
+            Dale una nueva vida a tu vestido. Adapto cada prenda a tu estilo y necesidad.
+            También recreo diseños inspirados en referencias.
+          </p>
         </div>
 
       </div>
-
     </section>
   );
 };
