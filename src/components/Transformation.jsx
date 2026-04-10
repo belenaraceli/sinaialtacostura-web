@@ -3,35 +3,34 @@ import "../styles/global.css";
 const Transformation = () => {
   return (
     <section className="transformation" id="transformacion">
+      <div className="transformation-container">
 
-      <div className="transformation__container">
-
-        <div className="transformation__image">
-          <img src="/images/transformacion.jpg" alt="Transformación de vestido" />
+        {/* IMAGEN */}
+        <div className="transformation-image">
+          <img src="../src/assets/images/transformacion.svg" alt="Antes y después vestido" />
         </div>
 
-        <div className="transformation__text">
-          <h2>Transformación de vestidos</h2>
+        {/* TEXTO */}
+        <div className="transformation-text">
+          <h2 className="transformation-title">
+            ¿Tenés un vestido que querés transformar?
+          </h2>
 
+          <p>¿Tenés un vestido que no termina de convencerte?</p>
+          <p>¿Viste un diseño que te encanta pero no se adapta a vos?</p>
           <p>
-            ¿Tenés un vestido que te gusta pero no te convence del todo?
+            Podemos ayudarte a renovarlo, ajustarlo o crear una versión
+            inspirada especialmente para vos.
           </p>
 
-          <p>
-            Realizamos modificaciones, ajustes o creamos una versión inspirada
-            en el diseño que soñás, adaptado a tu estilo y medida.
-          </p>
+          <button className="btn-primary">
+            Consultar por transformación
+          </button>
 
-          <p>
-            Cada prenda es trabajada con dedicación para lograr un resultado
-            único y personalizado.
-          </p>
-
-          <button>Consultar</button>
+          <div className="divider"></div>
         </div>
 
       </div>
-
     </section>
   );
 };
