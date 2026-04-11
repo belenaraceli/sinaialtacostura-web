@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "../styles/global.css";
 
 const images = [
@@ -9,11 +9,23 @@ const images = [
   { src: "/src/assets/images/5.svg", category: "fiesta" },
   { src: "/src/assets/images/6.svg", category: "xv" },
   { src: "/src/assets/images/7.svg", category: "novias" },
+  { src: "/src/assets/images/8.svg", category: "xv" },
+  { src: "/src/assets/images/9.svg", category: "novias" },
+  { src: "/src/assets/images/10.svg", category: "fiesta" },
 ];
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
   const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const sliderRef = useRef();
+
+  const scroll = (offset) => {
+    sliderRef.current.scrollBy({
+      left: offset,
+      behavior: "smooth",
+    });
+  };
 
   const filteredImages =
     filter === "all"
@@ -44,18 +56,28 @@ const Gallery = () => {
         <button onClick={() => setFilter("fiesta")}>FIESTA</button>
       </div>
 
-      {/* GRID */}
-      <div className="gallery-grid">
-        {filteredImages.map((img, index) => (
-          <div
-            key={index}
-            className="gallery-item"
-            onClick={() => setSelectedIndex(index)}
-          >
-            <img src={img.src} alt="" />
-            <div className="overlay">Ver detalles</div>
-          </div>
-        ))}
+      {/* SLIDER */}
+      <div className="gallery-wrapper">
+        <button className="slider-btn left" onClick={() => scroll(-400)}>
+          ‹
+        </button>
+
+        <div className="gallery-slider" ref={sliderRef}>
+          {filteredImages.map((img, index) => (
+            <div
+              key={index}
+              className="gallery-item"
+              onClick={() => setSelectedIndex(index)}
+            >
+              <img src={img.src} alt="" />
+              <div className="overlay">Ver detalles</div>
+            </div>
+          ))}
+        </div>
+
+        <button className="slider-btn right" onClick={() => scroll(400)}>
+          ›
+        </button>
       </div>
 
       {/* LIGHTBOX */}

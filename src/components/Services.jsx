@@ -44,7 +44,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/transformacion.jpg" alt="Transformación" />
+            <img src="/src/assets/images/transformacion-services.svg" alt="Transformación" />
             <span>Rediseño & Transformación</span>
           </div>
           <p>

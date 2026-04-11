@@ -1,6 +1,17 @@
 import "../styles/global.css";
+import { useState, useEffect } from "react";
 
 const About = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowVideo(true);
+    }, 4000); // tiempo antes de mostrar el video
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="about" id="sobre-mi">
       <div className="about-container">
@@ -28,12 +39,23 @@ const About = () => {
           </p>
         </div>
 
-        {/* IMAGEN */}
-        <div className="about-image">
-          <img src="/src/assets/images/about.svg" alt="Diseño de vestidos" />
+        {/* IMAGEN + VIDEO */}
+        <div className={`about-image ${showVideo ? "show-video" : ""}`}>
+          <img
+            src="/src/assets/images/about.svg"
+            alt="Diseño de vestidos"
+          />
+
+          <video
+            src="/videos/about.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         </div>
 
-        {/* TITULO FLOTANTE */}
+        {/* TITULO */}
         <h2 className="about-title">Sobre Mí</h2>
 
       </div>
@@ -42,4 +64,3 @@ const About = () => {
 };
 
 export default About;
-
