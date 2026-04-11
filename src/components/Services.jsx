@@ -16,7 +16,7 @@ const Services = () => {
           </div>
           <p>
             Vestidos de novia diseñados para reflejar tu esencia.
-            Románticos, modernos o clásicos, creamos el vestido perfecto para tu "sí, quiero".
+            Románticos, modernos o clásicos, el vestido perfecto para tu "sí, quiero".
           </p>
         </div>
 
