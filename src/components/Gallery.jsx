@@ -13,12 +13,24 @@ const images = [
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
-  const [selectedImg, setSelectedImg] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   const filteredImages =
     filter === "all"
       ? images
       : images.filter((img) => img.category === filter);
+
+  const nextImage = () => {
+    setSelectedIndex((prev) =>
+      prev === filteredImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setSelectedIndex((prev) =>
+      prev === 0 ? filteredImages.length - 1 : prev - 1
+    );
+  };
 
   return (
     <section className="gallery" id="galeria">
@@ -26,30 +38,10 @@ const Gallery = () => {
 
       {/* FILTROS */}
       <div className="gallery-filters">
-        <button
-          className={filter === "all" ? "active" : ""}
-          onClick={() => setFilter("all")}
-        >
-          TODO
-        </button>
-        <button
-          className={filter === "novias" ? "active" : ""}
-          onClick={() => setFilter("novias")}
-        >
-          NOVIAS
-        </button>
-        <button
-          className={filter === "xv" ? "active" : ""}
-          onClick={() => setFilter("xv")}
-        >
-          XV
-        </button>
-        <button
-          className={filter === "fiesta" ? "active" : ""}
-          onClick={() => setFilter("fiesta")}
-        >
-          FIESTA
-        </button>
+        <button onClick={() => setFilter("all")}>TODO</button>
+        <button onClick={() => setFilter("novias")}>NOVIAS</button>
+        <button onClick={() => setFilter("xv")}>XV</button>
+        <button onClick={() => setFilter("fiesta")}>FIESTA</button>
       </div>
 
       {/* GRID */}
@@ -58,18 +50,33 @@ const Gallery = () => {
           <div
             key={index}
             className="gallery-item"
-            onClick={() => setSelectedImg(img.src)}
+            onClick={() => setSelectedIndex(index)}
           >
-            <img src={img.src} alt="Vestido" />
+            <img src={img.src} alt="" />
             <div className="overlay">Ver detalles</div>
           </div>
         ))}
       </div>
 
       {/* LIGHTBOX */}
-      {selectedImg && (
-        <div className="lightbox" onClick={() => setSelectedImg(null)}>
-          <img src={selectedImg} alt="Vista ampliada" />
+      {selectedIndex !== null && (
+        <div className="lightbox">
+          <span className="close" onClick={() => setSelectedIndex(null)}>
+            ✕
+          </span>
+
+          <span className="arrow left" onClick={prevImage}>
+            ‹
+          </span>
+
+          <img
+            src={filteredImages[selectedIndex].src}
+            alt="Vista ampliada"
+          />
+
+          <span className="arrow right" onClick={nextImage}>
+            ›
+          </span>
         </div>
       )}
     </section>

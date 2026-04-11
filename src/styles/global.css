@@ -744,24 +744,67 @@ body {
   opacity: 1;
 }
 
-/* LIGHTBOX */
+/* =========================
+   LIGHTBOX PRO
+========================= */
+
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   z-index: 2000;
-  cursor: pointer;
 }
 
+/* IMAGEN */
 .lightbox img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 85%;
+  max-height: 85%;
   border-radius: 10px;
+}
+
+/* BOTÓN CERRAR */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  opacity: 0.7;
+}
+
+/* FLECHAS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  opacity: 0.7;
+}
+
+.arrow.left {
+  left: 30px;
+}
+
+.arrow.right {
+  right: 30px;
 }
 
 /* =========================
