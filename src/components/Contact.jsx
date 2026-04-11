@@ -2,7 +2,7 @@ import "../styles/global.css";
 
 const Contact = () => {
   return (
-    <section className="contact" id="contacto">
+    <section className="contact fade-in-section" id="contacto">
 
       <div className="contact-box">
         <h2>¡Agenda tu cita!</h2>
@@ -22,7 +22,7 @@ const Contact = () => {
         </a>
 
         <div className="contact-info">
-          <p><img src="/images/location.svg" alt="Ubicación" className="contact-icon" /> Villa Ballester, Buenos Aires, Argentina (Atelier Privado) </p>
+          <p><img src="/images/location.svg" alt="Ubicación" className="contact-icon" /> Villa Ballester, Buenos Aires, Argentina <br /> (Atelier Privado) </p>
           <p><img src="/images/mail.svg" alt="Email" className="contact-icon" /> leonardaugartemendoza@gmail.com</p>
         </div>
       </div>

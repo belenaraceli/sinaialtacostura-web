@@ -2,7 +2,7 @@ import "../styles/global.css";
 
 const Transformation = () => {
   return (
-    <section className="transformation" id="transformacion">
+    <section className="transformation fade-in-section" id="transformacion">
       <div className="transformation-container">
 
         {/* IMAGEN */}
@@ -23,14 +23,14 @@ const Transformation = () => {
             inspirada especialmente para vos.
           </p>
 
-          <button className="btn-primary">
-            <a
-              href="https://wa.me/5491139044175"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            </a>Consultar por transformación
-          </button>
+          <a
+            href="https://wa.me/5491139044175"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Consultar por transformación
+          </a>
 
           <div className="divider"></div>
         </div>

@@ -2,7 +2,7 @@ import "../styles/global.css";
 
 const Services = () => {
   return (
-    <section className="services" id="servicios">
+    <section className="services fade-in-section" id="servicios">
       
       <h2 className="services-title">Mis Servicios</h2>
 

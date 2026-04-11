@@ -45,7 +45,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="gallery" id="galeria">
+    <section className="gallery fade-in-section" id="galeria">
       <h2 className="gallery-title">Galería</h2>
 
       {/* FILTROS */}

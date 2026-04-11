@@ -27,10 +27,12 @@ const Footer = () => {
 
       <p className="footer-copy">
         © Sinai Alta Costura. Todos los derechos reservados.
+        <br />
+        Diseño de vestidos a medida en Buenos Aires
       </p>
 
       <p className="footer-dev">
-        Diseño web por <span>Belén Araceli</span>
+        Diseño web por <span> <a href="https://belenaraceli.com/" target="_blank" rel="noopener noreferrer">Belén Araceli</a></span>
       </p>
 
     </footer>

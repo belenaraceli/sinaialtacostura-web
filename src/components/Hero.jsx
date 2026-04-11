@@ -2,7 +2,7 @@ import "../styles/global.css";
 
 const Hero = () => {
   return (
-    <section className="hero" id="inicio">
+    <section className="hero fade-in-section" id="inicio">
       <div className="hero-overlay">
     
         <div className="hero-top">

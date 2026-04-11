@@ -6,8 +6,11 @@ import Transformation from "./components/Transformation";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import useScrollAnimation from "./hooks/useScrollAnimation";
 
 function App() {
+  useScrollAnimation();
+  
   return (
     <>
       <Navbar />

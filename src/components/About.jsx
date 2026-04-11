@@ -7,13 +7,13 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowVideo(true);
-    }, 4000); // tiempo antes de mostrar el video
+    }, 5000); // tiempo antes de mostrar el video
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <section className="about" id="sobre-mi">
+    <section className="about fade-in-section" id="sobre-mi">
       <div className="about-container">
 
         {/* TEXTO */}
