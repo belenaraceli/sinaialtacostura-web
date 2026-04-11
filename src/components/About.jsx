@@ -42,7 +42,7 @@ const About = () => {
         {/* IMAGEN + VIDEO */}
         <div className={`about-image ${showVideo ? "show-video" : ""}`}>
           <img
-            src="/src/assets/images/about.svg"
+            src="/images/about.svg"
             alt="Diseñadora de alta costura a medida en Buenos Aires"
           />
 

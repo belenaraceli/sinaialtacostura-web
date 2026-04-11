@@ -7,7 +7,7 @@ const Transformation = () => {
 
         {/* IMAGEN */}
         <div className="transformation-image">
-          <img src="../src/assets/images/transformacion.svg" alt="Antes y después vestido" />
+          <img src="/images/transformacion.svg" alt="Antes y después vestido" />
         </div>
 
         {/* TEXTO */}

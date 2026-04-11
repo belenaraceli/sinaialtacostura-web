@@ -2,16 +2,16 @@ import { useState, useRef } from "react";
 import "../styles/global.css";
 
 const images = [
-  { src: "/src/assets/images/1.svg", category: "novias" },
-  { src: "/src/assets/images/2.svg", category: "fiesta" },
-  { src: "/src/assets/images/3.svg", category: "novias" },
-  { src: "/src/assets/images/4.svg", category: "xv" },
-  { src: "/src/assets/images/5.svg", category: "fiesta" },
-  { src: "/src/assets/images/6.svg", category: "xv" },
-  { src: "/src/assets/images/7.svg", category: "novias" },
-  { src: "/src/assets/images/8.svg", category: "xv" },
-  { src: "/src/assets/images/9.svg", category: "novias" },
-  { src: "/src/assets/images/10.svg", category: "fiesta" },
+  { src: "/images/1.svg", category: "novias" },
+  { src: "/images/2.svg", category: "fiesta" },
+  { src: "/images/3.svg", category: "novias" },
+  { src: "/images/4.svg", category: "xv" },
+  { src: "/images/5.svg", category: "fiesta" },
+  { src: "/images/6.svg", category: "xv" },
+  { src: "/images/7.svg", category: "novias" },
+  { src: "/images/8.svg", category: "xv" },
+  { src: "/images/9.svg", category: "novias" },
+  { src: "/images/10.svg", category: "fiesta" },
 ];
 
 const Gallery = () => {
