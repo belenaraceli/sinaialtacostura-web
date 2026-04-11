@@ -60,7 +60,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(var(--color-bg-rgb), 0.6);
+  background: rgba(245, 241, 237, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -288,11 +288,11 @@ body {
   }
 
   .hero-title {
-    font-size: 38vw;
+    font-size: 40vw;
     align-self: baseline;
     line-height: 0.7;
     padding: 0px;
-    margin-top: 100px;
+    margin-top: 130px;
     width: 100%;
   }
 
@@ -301,8 +301,8 @@ body {
   }
 
   .hero-logo {
-    width: 145px;
-    padding-top: 80px;
+    width: 155px;
+    padding-top: 100px;
   }
 
   .hero-btn {
@@ -342,7 +342,7 @@ body {
   letter-spacing: 2px;
   font-weight: 300;
   grid-area: title;
-  margin-top: 30px;
+  margin-top: 50px;
   z-index: 3;
 }
 
