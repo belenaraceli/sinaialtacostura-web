@@ -36,7 +36,7 @@ const Navbar = () => {
       </a>
 
       <a
-        href="https://facebook.com/"
+        href="https://www.facebook.com/SinaiAltaCostura"
         target="_blank"
         rel="noopener noreferrer"
       >

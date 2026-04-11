@@ -854,6 +854,7 @@ body {
   align-items: center;
 
   z-index: 2000;
+  overflow: hidden;
 }
 
 /* IMAGEN */
@@ -861,6 +862,14 @@ body {
   max-width: 85%;
   max-height: 85%;
   border-radius: 10px;
+
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+}
+
+/* hover zoom */
+.lightbox img:hover {
+  transform: scale(1.4);
 }
 
 /* CERRAR */
@@ -925,56 +934,184 @@ body {
 /* =========================
    CONTACT
 ========================= */
+
 .contact {
   padding: 80px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-box {
-  max-width: 600px;
-  width: 100%;
   text-align: center;
-  padding: 40px 20px;
-  border: 1px solid var(--color-border);
-  border-radius: 120px;
+  position: relative;
 }
 
-.contact-title {
+/* CAJA PRINCIPAL */
+.contact-box {
+  max-width: 770px;
+  margin: auto;
+  padding: 60px 30px;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 45% 55% 60% 40% / 50% 60% 40% 50%;
+
+  background: transparent;
+}
+
+/* TITULO */
+.contact-box h2 {
   font-family: var(--font-title);
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 100px;
+  margin-bottom: 15px;
 }
 
+/* TEXTO */
+.contact-box p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* BOTON */
 .contact-btn {
-  background: var(--color-primary);
-  border: none;
-  padding: 12px 25px;
-  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #d8c29f;
+  color: #000;
+
+  padding: 12px 30px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s;
+  margin-top: 25px;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
+.wpp-icon {
+  width: 28px;
+  height: 28px;
+
+  filter: brightness(20%);
+}
+
+/* INFO */
+.contact-info {
   margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* =========================
+   MAPA
+========================= */
+
+.contact-map {
+  margin-top: 50px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  filter: grayscale(1);
+  border-radius: 10px;
+}
+
+/* =========================
+   CINTA ANIMADA
+========================= */
+
+.contact-ticker {
+  overflow: hidden;
+  margin-top: 40px;
+  border-top: 1px solid var(--color-accent);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scrollText 20s linear infinite;
+}
+
+.ticker-track span {
+  padding: 10px 40px;
+  font-size: 14px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ANIMACION */
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* =========================
    FOOTER
 ========================= */
+
 .footer {
-  background: var(--color-dark);
+  background: #1e1e1e;
   color: white;
+
   text-align: center;
   padding: 60px 20px;
 }
 
 .footer-logo {
   width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  letter-spacing: 3px;
+  margin-bottom: 5px;
 }
 
 .footer-subtitle {
   font-family: var(--font-title);
-  color: var(--color-primary);
+  font-size: 28px;
+  color: var(--color-accent);
+  margin-bottom: 20px;
 }
 
+/* ICONOS */
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* TEXTOS */
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.footer-dev {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer-dev span {
+  text-decoration: underline;
 }

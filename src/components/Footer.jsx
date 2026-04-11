@@ -1,29 +1,40 @@
-import "../styles/global.css";
-
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <img src="/images/logo.png" alt="Sinai logo" className="footer-logo" />
 
-        <h3 className="footer-brand">SINAI</h3>
-        <p className="footer-subtitle">Alta Costura</p>
+      <img src="/images/logo.png" alt="logo" className="footer-logo" />
 
-        <div className="footer-social">
-          <span>Instagram</span>
-          <span>Facebook</span>
-        </div>
+      <p className="footer-title">SINAI</p>
+      <p className="footer-subtitle">Alta Costura</p>
 
-        <p className="footer-copy">
-          © Sinai Alta Costura. Todos los derechos reservados.
-        </p>
+      <div className="footer-social">
+        <a
+        href="https://instagram.com/sinaialtacostura"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          <img src="/images/ig.svg" alt="Instagram" />
+        </a>
 
-        <p className="footer-credit">
-          Diseño web por Belén Araceli
-        </p>
+        <a
+        href="https://www.facebook.com/SinaiAltaCostura"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+          <img src="/images/fb.svg" alt="Facebook" />
+        </a>
       </div>
+
+      <p className="footer-copy">
+        © Sinai Alta Costura. Todos los derechos reservados.
+      </p>
+
+      <p className="footer-dev">
+        Diseño web por <span>Belén Araceli</span>
+      </p>
+
     </footer>
   );
-}
+};
 
 export default Footer;

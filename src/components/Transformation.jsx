@@ -24,7 +24,12 @@ const Transformation = () => {
           </p>
 
           <button className="btn-primary">
-            Consultar por transformación
+            <a
+              href="https://wa.me/5491139044175"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            </a>Consultar por transformación
           </button>
 
           <div className="divider"></div>
