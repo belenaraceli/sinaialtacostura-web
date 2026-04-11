@@ -43,7 +43,7 @@ const About = () => {
         <div className={`about-image ${showVideo ? "show-video" : ""}`}>
           <img
             src="/src/assets/images/about.svg"
-            alt="Diseño de vestidos"
+            alt="Diseñadora de alta costura a medida en Buenos Aires"
           />
 
           <video
@@ -52,6 +52,7 @@ const About = () => {
             muted
             loop
             playsInline
+            aria-label="Proceso de diseño de vestidos de alta costura"
           />
         </div>
 

@@ -11,7 +11,7 @@ const Services = () => {
         {/* CARD */}
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/novias.svg" alt="Novias" />
+            <img src="/src/assets/images/novias.svg" alt="Vestidos de novia a medida en Buenos Aires" />
             <span>Novias</span>
           </div>
           <p>
@@ -22,7 +22,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/15.svg" alt="15 años" />
+            <img src="/src/assets/images/15.svg" alt="Vestidos de 15 años diseñados a medida" />
             <span>15 Años</span>
           </div>
           <p>
@@ -33,7 +33,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/madrinas.svg" alt="Madrinas" />
+            <img src="/src/assets/images/madrinas.svg" alt="Vestidos de madrina y gala de alta costura" />
             <span>Madrinas</span>
           </div>
           <p>
@@ -44,7 +44,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/src/assets/images/transformacion-services.svg" alt="Transformación" />
+            <img src="/src/assets/images/transformacion-services.svg" alt="Rediseño y transformación de vestidos a medida" />
             <span>Rediseño & Transformación</span>
           </div>
           <p>

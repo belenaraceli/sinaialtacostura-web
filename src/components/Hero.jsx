@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero-top">
           <img 
               src="../src/assets/images/sinai-title.png" 
-              alt="Sinai" 
+              alt="Sinai Alta Costura - Diseñadora de vestidos a medida en Buenos Aires" 
               className="hero-logo"
           />
 
@@ -17,6 +17,9 @@ const Hero = () => {
           </a>
         </div>
 
+        <h1 className="visually-hidden">
+          Sinai Alta Costura en Buenos Aires - Vestidos a medida
+        </h1>
         <h2 className="hero-title">Alta Costura</h2>
 
       </div>
