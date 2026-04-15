@@ -297,7 +297,7 @@ body {
 
   .hero-logo {
     width: 155px;
-    padding-top: 90px;
+    padding-top: 120px;
   }
 
   .hero-title {
@@ -305,7 +305,7 @@ body {
     align-self: baseline;
     line-height: 0.7;
     padding: 0px;
-    margin-top: 80px;
+    margin-top: 100px;
     width: 100%;
   }
 
@@ -329,7 +329,7 @@ body {
 ========================= */
 
 .about {
-  padding: 10px 0px;
+  padding: 30px 0px;
 }
 
 .about-container {
@@ -347,12 +347,13 @@ body {
 .about-title {
   font-family: var(--font-title);
   color: var(--color-accent);
+  line-height: 0.6;
   text-align: center;
   font-size: 100px;
   letter-spacing: 2px;
   font-weight: 300;
   grid-area: title;
-  margin-top: 20px;
+  margin-top: 180px;
   z-index: 3;
 }
 
