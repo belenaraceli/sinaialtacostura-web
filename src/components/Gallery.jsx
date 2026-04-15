@@ -1,24 +1,39 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import "../styles/global.css";
 
 const images = [
-  { src: "/images/1.svg", category: "novias" },
-  { src: "/images/2.svg", category: "fiesta" },
-  { src: "/images/3.svg", category: "novias" },
-  { src: "/images/4.svg", category: "xv" },
-  { src: "/images/5.svg", category: "fiesta" },
-  { src: "/images/6.svg", category: "xv" },
-  { src: "/images/7.svg", category: "novias" },
-  { src: "/images/8.svg", category: "xv" },
-  { src: "/images/9.svg", category: "novias" },
-  { src: "/images/10.svg", category: "fiesta" },
+  { src: "/images/1.svg", category: "novias", type: "image" },
+  { src: "/videos/2.mp4", category: "fiesta", type: "video" },
+  { src: "/images/3.svg", category: "novias", type: "image" },
+  { src: "/images/4.svg", category: "xv", type: "image" },
+  { src: "/images/5.svg", category: "fiesta", type: "image" },
+  { src: "/images/6.svg", category: "xv", type: "image" },
+  { src: "/images/7.svg", category: "novias", type: "image" },
+  { src: "/images/8.svg", category: "xv", type: "image" },
+  { src: "/images/9.svg", category: "novias", type: "image" },
+  { src: "/images/10.svg", category: "fiesta", type: "image" },
+  { src: "/images/11.svg", category: "novias", type: "image" },
+  { src: "/images/12.svg", category: "xv", type: "image" },
+  { src: "/videos/13.mp4", category: "novias", type: "video" },
+  { src: "/images/14.svg", category: "fiesta", type: "image" },
 ];
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [zoomed, setZoomed] = useState(false); // 👈 NUEVO
 
   const sliderRef = useRef();
+
+  useEffect(() => {
+    if (selectedIndex !== null) {
+    document.body.classList.add("lightbox-open");
+    } else {
+    document.body.classList.remove("lightbox-open");
+    }
+
+    return () => document.body.classList.remove("lightbox-open");
+  }, [selectedIndex]);
 
   const scroll = (offset) => {
     sliderRef.current.scrollBy({
@@ -33,12 +48,14 @@ const Gallery = () => {
       : images.filter((img) => img.category === filter);
 
   const nextImage = () => {
+    setZoomed(false); // 👈 reset zoom
     setSelectedIndex((prev) =>
       prev === filteredImages.length - 1 ? 0 : prev + 1
     );
   };
 
   const prevImage = () => {
+    setZoomed(false); // 👈 reset zoom
     setSelectedIndex((prev) =>
       prev === 0 ? filteredImages.length - 1 : prev - 1
     );
@@ -69,7 +86,17 @@ const Gallery = () => {
               className="gallery-item"
               onClick={() => setSelectedIndex(index)}
             >
-              <img src={img.src} alt="" />
+              {img.type === "video" ? (
+                <video
+                  src={img.src}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                />
+              ) : (
+                <img src={img.src} alt="Diseño de alta costura" />
+              )}
               <div className="overlay">Ver detalles</div>
             </div>
           ))}
@@ -91,10 +118,19 @@ const Gallery = () => {
             ‹
           </span>
 
-          <img
-            src={filteredImages[selectedIndex].src}
-            alt="Vista ampliada"
-          />
+          {filteredImages[selectedIndex].type === "video" ? (
+            <video
+              src={filteredImages[selectedIndex].src}
+              controls
+              autoPlay
+            />
+          ) : (
+            <img
+              src={filteredImages[selectedIndex].src}
+              className={zoomed ? "zoomed" : ""}
+              onClick={() => setZoomed(!zoomed)}
+            />
+          )}
 
           <span className="arrow right" onClick={nextImage}>
             ›
