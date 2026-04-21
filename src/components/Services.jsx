@@ -1,4 +1,8 @@
 import "../styles/global.css";
+import noviasImg from "../assets/images/novias.svg";
+import quinceImg from "../assets/images/15.svg";
+import madrinasImg from "../assets/images/madrinas.svg";
+import transformacionImg from "../assets/images/transformacion-services.svg";
 
 const Services = () => {
   return (
@@ -8,10 +12,9 @@ const Services = () => {
 
       <div className="services-grid">
 
-        {/* CARD */}
         <div className="service-card">
           <div className="service-img">
-            <img src="/images/novias.svg" alt="Vestidos de novia a medida en Buenos Aires" />
+            <img src={noviasImg} alt="Vestidos de novia a medida en Buenos Aires" />
             <span>Novias</span>
           </div>
           <p>
@@ -22,7 +25,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/images/15.svg" alt="Vestidos de 15 años diseñados a medida" />
+            <img src={quinceImg} alt="Vestidos de 15 años diseñados a medida" />
             <span>15 Años</span>
           </div>
           <p>
@@ -33,7 +36,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/images/madrinas.svg" alt="Vestidos de madrina y gala de alta costura" />
+            <img src={madrinasImg} alt="Vestidos de madrina y gala de alta costura" />
             <span>Madrinas</span>
           </div>
           <p>
@@ -44,7 +47,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-img">
-            <img src="/images/transformacion-services.svg" alt="Rediseño y transformación de vestidos a medida" />
+            <img src={transformacionImg} alt="Rediseño y transformación de vestidos a medida" />
             <span>Rediseño & Transformación</span>
           </div>
           <p>

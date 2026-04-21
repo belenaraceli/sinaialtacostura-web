@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import transformacionImg from "../assets/images/transformacion.svg";
 
 const Transformation = () => {
   return (
@@ -7,7 +8,7 @@ const Transformation = () => {
 
         {/* IMAGEN */}
         <div className="transformation-image">
-          <img src="/images/transformacion.svg" alt="Antes y después vestido" />
+          <img src={transformacionImg} alt="Antes y después vestido" />
         </div>
 
         {/* TEXTO */}

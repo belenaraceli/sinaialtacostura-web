@@ -1,4 +1,7 @@
 import "../styles/global.css";
+import wppIcon from "../assets/images/wpp.svg";
+import locationIcon from "../assets/images/location.svg";
+import mailIcon from "../assets/images/mail.svg";
 
 const Contact = () => {
   return (
@@ -18,12 +21,12 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="contact-btn"
         >
-          <img src="/images/wpp.svg" alt="WhatsApp" className="wpp-icon" /> Contactar por Whatsapp
+          <img src={wppIcon} alt="WhatsApp" className="wpp-icon" /> Contactar por Whatsapp
         </a>
 
         <div className="contact-info">
-          <p><img src="/images/location.svg" alt="Ubicación" className="contact-icon" /> Villa Ballester, Buenos Aires, Argentina <br /> (Atelier Privado) </p>
-          <p><img src="/images/mail.svg" alt="Email" className="contact-icon" /> leonardaugartemendoza@gmail.com</p>
+          <p><img src={locationIcon} alt="Ubicación" className="contact-icon" /> Villa Ballester, Buenos Aires, Argentina <br /> (Atelier Privado)</p>
+          <p><img src={mailIcon} alt="Email" className="contact-icon" /> leonardaugartemendoza@gmail.com</p>
         </div>
       </div>
 

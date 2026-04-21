@@ -1,6 +1,8 @@
 import "../styles/global.css";
 import { useState } from "react";
-import logo from "/images/logo.png";
+import logo from "../assets/images/logo.png";
+import igIcon from "../assets/images/ig.svg";
+import fbIcon from "../assets/images/fb.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,22 +29,13 @@ const Navbar = () => {
       {/* RIGHT SIDE */}
       <div className="right">
         <div className="social">
-      <a
-        href="https://instagram.com/sinaialtacostura"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/images/ig.svg" alt="Instagram" />
-      </a>
-
-      <a
-        href="https://www.facebook.com/SinaiAltaCostura"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src="/images/fb.svg" alt="Facebook" />
-      </a>
-      </div>
+          <a href="https://instagram.com/sinaialtacostura" target="_blank" rel="noopener noreferrer">
+            <img src={igIcon} alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/SinaiAltaCostura" target="_blank" rel="noopener noreferrer">
+            <img src={fbIcon} alt="Facebook" />
+          </a>
+        </div>
 
         {/* HAMBURGER */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

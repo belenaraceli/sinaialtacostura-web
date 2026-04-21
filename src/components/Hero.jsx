@@ -1,4 +1,5 @@
 import "../styles/global.css";
+import sinaiTitle from "../assets/images/sinai-title.png";
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
     
         <div className="hero-top">
           <img 
-              src="images/sinai-title.png" 
+              src={sinaiTitle}
               alt="Sinai Alta Costura - Diseñadora de vestidos a medida en Buenos Aires" 
               className="hero-logo"
           />
