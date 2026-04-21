@@ -206,7 +206,7 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("../assets/images/hero.svg");
+  background-image: url("../assets/images/hero.webp");
   background-size: cover;
   background-position: bottom center;
 
@@ -377,7 +377,7 @@ body {
   height: 50px;
   margin: 0 auto;
 
-  background-image: url("../assets/images/linea.svg");
+  background-image: url("../assets/images/linea.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -507,7 +507,7 @@ body {
   height: 20px;
   margin: 10px auto 0;
 
-  background-image: url("../assets/images/linea-decorativa.png");
+  background-image: url("../assets/images/linea.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -664,7 +664,7 @@ body {
   margin: 30px auto 0;
   width: 220px;
   height: 50px;
-  background: url("../assets/images/linea.svg") no-repeat center;
+  background: url("../assets/images/linea.webp") no-repeat center;
   background-size: contain;
 }
 

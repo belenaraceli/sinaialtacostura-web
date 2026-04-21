@@ -1,6 +1,6 @@
 import "../styles/global.css";
 import { useState, useEffect } from "react";
-import aboutImage from "../assets/images/about.svg";
+import aboutImage from "../assets/images/about.webp";
 import aboutVideo from "../assets/videos/about.mp4";
 
 const About = () => {

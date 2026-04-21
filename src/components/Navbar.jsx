@@ -1,6 +1,6 @@
 import "../styles/global.css";
 import { useState } from "react";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.webp";
 import igIcon from "../assets/images/ig.svg";
 import fbIcon from "../assets/images/fb.svg";
 

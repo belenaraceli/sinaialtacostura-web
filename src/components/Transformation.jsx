@@ -1,5 +1,5 @@
 import "../styles/global.css";
-import transformacionImg from "../assets/images/transformacion.svg";
+import transformacionImg from "../assets/images/transformacion.webp";
 
 const Transformation = () => {
   return (

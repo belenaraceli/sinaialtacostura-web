@@ -1,8 +1,8 @@
 import "../styles/global.css";
-import noviasImg from "../assets/images/novias.svg";
-import quinceImg from "../assets/images/15.svg";
-import madrinasImg from "../assets/images/madrinas.svg";
-import transformacionImg from "../assets/images/transformacion-services.svg";
+import noviasImg from "../assets/images/novias.webp";
+import quinceImg from "../assets/images/15.webp";
+import madrinasImg from "../assets/images/madrinas.webp";
+import transformacionImg from "../assets/images/transformacion-services.webp";
 
 const Services = () => {
   return (

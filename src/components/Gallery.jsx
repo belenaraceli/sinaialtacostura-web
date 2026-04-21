@@ -1,18 +1,18 @@
 import { useState, useRef, useEffect } from "react";
 import "../styles/global.css";
 
-import img1 from "../assets/images/1.svg";
-import img3 from "../assets/images/3.svg";
-import img4 from "../assets/images/4.svg";
-import img5 from "../assets/images/5.svg";
-import img6 from "../assets/images/6.svg";
-import img7 from "../assets/images/7.svg";
-import img8 from "../assets/images/8.svg";
-import img9 from "../assets/images/9.svg";
-import img10 from "../assets/images/10.svg";
-import img11 from "../assets/images/11.svg";
-import img12 from "../assets/images/12.svg";
-import img14 from "../assets/images/14.svg";
+import img1 from "../assets/images/1.webp";
+import img3 from "../assets/images/3.webp";
+import img4 from "../assets/images/4.webp";
+import img5 from "../assets/images/5.webp";
+import img6 from "../assets/images/6.webp";
+import img7 from "../assets/images/7.webp";
+import img8 from "../assets/images/8.webp";
+import img9 from "../assets/images/9.webp";
+import img10 from "../assets/images/10.webp";
+import img11 from "../assets/images/11.webp";
+import img12 from "../assets/images/12.webp";
+import img14 from "../assets/images/14.webp";
 import video2 from "../assets/videos/2.mp4";
 import video13 from "../assets/videos/13.mp4";
 
